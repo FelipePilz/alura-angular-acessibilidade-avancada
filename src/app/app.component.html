@@ -23,7 +23,13 @@
     </div>
 
     <div class="button-group">
-      <button class="button button-primary" type="submit">Submit</button>
+      <button
+        class="button button-primary"
+        type="submit"
+        [attr.aria-disabled]="form.invalid"
+      >
+        Submit
+      </button>
       <button
         class="button button-secondary"
         type="button"
